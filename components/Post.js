@@ -1,6 +1,6 @@
 export class Post extends HTMLElement {
   connectedCallback() {
-    fetch(`https://api.github.com/repos/ConservativesForYang/issues/${window.location.hash.slice(1)}`, {
+    fetch(`https://api.github.com/repos/ConservativesForYang/ConservativesForYang.github.io/issues/${window.location.hash.slice(1)}`, {
       headers: { "Accept": "application/vnd.github.VERSION.html+json" }
     })
     .then(data => data.json())
