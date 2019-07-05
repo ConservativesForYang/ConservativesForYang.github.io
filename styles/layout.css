@@ -1,0 +1,22 @@
+.w600   { width: 100%; max-width: 600px; }
+.vw100  { width: 100%; max-width: 100%; }
+
+.vh75 { height: 75vh; max-height: 75vh; }
+
+.p10 { padding: 10px; }
+.m50 { margin-top: 50px; margin-bottom: 50px; }
+
+.block { display: block; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-left { margin-right: auto; }

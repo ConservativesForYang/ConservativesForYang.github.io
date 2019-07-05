@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<!-- @author  ConservativesForYang -->
+<!-- @version 1.0.0 - July 4, 2019 -->
+
+
+<html>
+  <head>
+    <meta name="description" content="106 Essays for 106 policies">
+    <meta name="keywords" content="Yang,2020,Conservative">
+    <meta name="author" content="ConservativesForYang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/palette.css">
+    <link rel="stylesheet" href="styles/layout.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap">
+
+    <title>106 Essays</title>
+  </head>
+
+
+  <body>
+    <x-router>
+      <noscript>Please Enable JavaScript</noscript>
+    </x-router>
+  </body>
+
+
+  <template path="/">
+    <section class="bg-gray vh75 vw100 center">
+      <div class="bg-gray w600 p10 flex-column">
+        <img src="images/Andrew_Yang_2020_logo.png" width="86.7" height="102.9" class="p10">
+        <p class="p10 mont22">
+          Andrew Yang has <a href="https://www.yang2020.com/policies/">106</a> proposed policy plans.  This blog
+          will analyse each of these polices from a conservative's point of view in a series of 106 arguments.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white vw100 center">
+      <x-preview class="w600"></x-preview>
+    </section>
+  </template>
+
+
+  <template path="/post">
+    <section class="vw100 center">
+      <x-post></x-post>
+    </section>
+  </template>
+
+
+  <script type="module">
+    import { Router } from './components/Router.js'
+    import { Link } from './components/Link.js'
+    import { Preview } from './components/Preview.js'
+    import { Post } from './components/Post.js'
+    customElements.define('x-router', Router)
+    customElements.define('x-link', Link)
+    customElements.define('x-preview', Preview)
+    customElements.define('x-post', Post)
+  </script>
+</html>

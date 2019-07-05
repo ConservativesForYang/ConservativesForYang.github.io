@@ -1,0 +1,16 @@
+:root {
+  font-size: 62.5%;
+}
+
+
+.fg-light { color: #898d99; }
+.fg-gray  { color: #535358; }
+.fg-black { color: #252528; }
+.bg-gray  { background: #F9F9FB; }
+.bg-white { background: #FFFFFF; }
+
+
+.mont22 { font-size: 2.2rem;  font-weight: 500; line-height: 4.3rem;  font-family: "Montserrat", "Arial", Sans-Serif; }
+.mont14 { font-size: 1.4rem;  font-weight: 600; font-family: "Montserrat", "Arial", Sans-Serif; }
+.hind   { font-size: 3.2rem;  font-weight: 700; font-family: "Hind", "Arial", Sans-Serif; }
+.lora   { font-size: 1.75rem; font-weight: 400; line-height: 3.4rem;  font-family: "Lora", "Times New Roman", Serif; }
