@@ -11,7 +11,7 @@ export class Preview extends HTMLElement {
         container.classList.add('p10', 'm50', 'block')
         date.classList.add('p10', 'fg-light', 'mont14')
         title.classList.add('p10', 'fg-black', 'hind')
-        text.classList.add('p10', 'fg-gray', 'lora')
+        text.classList.add('p10', 'fg-gray', 'lora', 'clamp', 'fade')
 
         container.setAttribute('to', '/post#' + issue.number)
 
