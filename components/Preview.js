@@ -1,6 +1,6 @@
 export class Preview extends HTMLElement {
   connectedCallback() {
-    fetch('https://api.github.com/repos/ConservativesForYang/106-Essays/issues?per_page=100&labels=post')
+    fetch('https://api.github.com/repos/ConservativesForYang/ConservativesForYang.github.io/issues?per_page=100&labels=post')
       .then(data => data.json())
       .then(data => data.forEach(issue => {
         const container = document.createElement('x-link')
